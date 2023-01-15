@@ -7,20 +7,21 @@
 
     <div class="m-nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
       </ul>
     </div>
 
     <div class="r-nav">
-      <a class="button" href="#">Contact</a>
+      <a class="button" href="#contact">Contact</a>
     </div>
   </div>
 </div>
 
-<div class="introduction">
+<div id="hero" class="introduction">
   <div class="intro-wrapper">
     <div class="l-intro">
       <div class="intro-wave">
@@ -89,7 +90,7 @@
   </div>
 </div>
 
-<div class="about">
+<div id="about" class="about">
   <!-- <div class="about-header">
     <h3>About Me</h3>
     <h4>Interests</h4>
@@ -144,7 +145,7 @@
   </div>
 </div>
 
-<div class="services">
+<div id="services" class="services">
   <div class="services-wrapper">
     <div class="services-header">
       <h3>My Awesome</h3>
@@ -232,7 +233,7 @@
   </div>
 </div>
 
-<div class="skills">
+<div id="skills" class="skills">
   <div class="blur"></div>
   <div class="skills-wrapper">
     <div class="skills-header">
@@ -310,38 +311,38 @@
   </div>
 </div>
 
-<div class="portfolio">
+<div id="portfolio" class="portfolio">
   <div class="portfolio-wrapper">
     <div class="portfolio-header">
-      <h3>Work /</h3>
-      <h4>Portfolio</h4>
+      <h3>Portfolio</h3>
+      <h4>Projects</h4>
     </div>
     <div class="portfolio-cards-holder">
       <div class="portfolio-card">
         <img src="../assets/images/taskjar.png" alt="taskjar software">
         <h5>Taskjar Software</h5>
-        <button class="button">Details</button>
+        <button class="button" (click)="openTaskJarDialog()">Details</button>
       </div>
       <div class="portfolio-card">
         <img src="../assets/images/ecommerce.png" alt="taskjar software">
         <h5>BigBasket</h5>
-        <button class="button">Details</button>
+        <button class="button" (click)="openBigBasketDialog()">Details</button>
       </div>
       <div class="portfolio-card">
         <img src="../assets/images/elearning.jpeg" alt="taskjar software">
         <h5>Estudiar</h5>
-        <button class="button">Details</button>
+        <button class="button" (click)="openEstudiarDialog()">Details</button>
       </div>
       <div class="portfolio-card">
         <img src="../assets/images/ascendas.png" alt="taskjar software">
         <h5>Ascendas Web App</h5>
-        <button class="button">Details</button>
+        <button class="button" (click)="openAscendasDialog()">Details</button>
       </div>
     </div>
   </div>
 </div>
 
-<div class="contact">
+<div id="contact" class="contact">
   <div class="contact-wrapper">
     <div class="contact-header">
       <h3>Contact Me</h3>
@@ -365,14 +366,14 @@
   
       <div class="cont-form">
         <h3>Write to me</h3>
-        <form action="">
+        <form action="https://formsubmit.co/fe584a971a864001cb5ea129615258cb" method="POST">
           <span class="name">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
           </span>
           <span class="email">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <label for="name">Email</label>
+            <input type="email" id="email" name="email" required>
           </span>
           <span class="message">
             <label for="name">Message</label>

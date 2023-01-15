@@ -10,6 +10,21 @@
     --skillCardBg : orange;
 }
 
+mat-dialog-container {
+    background-color: var(--mainBg) !important;
+    // padding: 0px 0px 0px 0px !important;
+    overflow: hidden !important;
+    // min-height: 80vh !important;
+    // max-width: 80vh !important;
+    max-width: 100vh !important;
+    // .project-details-holder {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +33,25 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--mainBg);
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.button {
+    background: orange;
+    padding: .5rem 1rem;
+    border-radius: 133px 133px 131px 132px;
+                    -moz-border-radius: 133px 133px 131px 132px;
+                    -webkit-border-radius: 133px 133px 131px 132px;
+                    border: .1rem solid rgb(255, 165, 0);
+    color: white;
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: orange;
+    border: .1rem solid orange;
+}

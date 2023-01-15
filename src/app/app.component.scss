@@ -857,6 +857,9 @@
                         padding: 1rem;
                         color: var(--mainText);
                     }
+                    input, textarea:focus{
+                        outline: .1rem solid orange;
+                    }
                     span{
                         display: flex;
                         flex-direction: column;
