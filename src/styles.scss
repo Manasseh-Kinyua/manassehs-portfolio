@@ -1,23 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-// :root {
-//     --mainBg: rgb(255, 255, 255);
-//     --mainText: black;
-//     --aColor: rgb(45, 35, 35);
-//     --navBoundary: rgb(169, 166, 166);
-//     --serviceCardBorderColor: rgb(255, 165, 0);
-//     --cardBg: rgb(255, 255, 255);
-//     --expCircleBorder : rgb(255, 165, 0);
-//     --skillCardBg : orange;
-// }
 :root {
-    --mainBg: rgb(78, 102, 133);
-    --mainText: rgb(255, 255, 255);
-    --aColor: rgb(211, 211, 211);
-    --navBoundary: rgb(41, 38, 38);
+    --mainBg: rgb(255, 255, 255);
+    --mainText: black;
+    --aColor: rgb(45, 35, 35);
+    --navBoundary: rgb(169, 166, 166);
     --serviceCardBorderColor: rgb(255, 165, 0);
-    --cardBg: rgb(60, 79, 103);
+    --cardBg: rgb(255, 255, 255);
     --expCircleBorder : rgb(255, 165, 0);
-    --skillCardBg : rgb(255, 165, 0);
+    --skillCardBg : orange;
 }
 
 mat-dialog-container {

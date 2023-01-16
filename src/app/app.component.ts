@@ -4,6 +4,7 @@ import { AscendasComponent } from './components/ascendas/ascendas.component';
 import { BigbasketComponent } from './components/bigbasket/bigbasket.component';
 import { EstudiarComponent } from './components/estudiar/estudiar.component';
 import { TaskjarComponent } from './components/taskjar/taskjar.component';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { TaskjarComponent } from './components/taskjar/taskjar.component';
 })
 export class AppComponent {
   constructor(
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private themeService: ThemeService
   ) {}
   title = 'Manasseh';
 
@@ -30,5 +32,9 @@ export class AppComponent {
 
   openAscendasDialog() {
     this.dialog.open(AscendasComponent)
+  }
+
+  switchTheme(name: string) {
+    this.themeService.setTheme(name)
   }
 }

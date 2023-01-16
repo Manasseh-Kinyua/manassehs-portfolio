@@ -60,10 +60,10 @@
         </div>
         <hr>
         <div class="theme-options">
-          <div class="light-option"></div>
-          <div class="dark-option"></div>
-          <div class="blue-option"></div>
-          <div class="green-option"></div>
+          <div class="light-option" (click)="switchTheme('default')"></div>
+          <div class="dark-option" (click)="switchTheme('dark')"></div>
+          <div class="blue-option" (click)="switchTheme('blue')"></div>
+          <div class="green-option" (click)="switchTheme('green')"></div>
         </div>
       </div>
 
