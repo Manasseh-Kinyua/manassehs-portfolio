@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 15;
     background: var(--mainBg);
     border-bottom: .1rem solid var(--navBoundary);
 
@@ -12,8 +12,21 @@
         margin: auto;
         background: var(--mainBg);
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        @media screen and (max-width: 880px) {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            min-height: 9rem;
+        }
+        @media screen and (max-width: 580px) {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            min-height: 11rem;
+        }
 
         .l-nav {
             display: flex;
@@ -69,6 +82,12 @@
         display: flex;
         flex-wrap: wrap;
         // justify-content: space-between;
+        @media screen and (max-width: 1580px) {
+            flex-flow: column;
+            // flex-wrap: wrap;
+            align-items: center;
+            margin-top: 8rem;
+        }
 
         .l-intro {
             display: flex;
@@ -122,10 +141,20 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media screen and (max-width: 880px) {
+                    align-items: center;
+                }
 
                 .me {
                     margin: -9rem -20rem 10rem -10rem;
                     z-index: 1;
+                    img{
+                        @media screen and (max-width: 1580px) {
+                            width: 80%;
+                            margin-left: 13rem;
+                            margin-top: 6rem;
+                        }
+                    }
                 }
 
                 .vectors {
@@ -136,13 +165,24 @@
                     z-index: 0;
                     margin-top: 5rem;
                     margin-left: 10rem;
+                    // @media screen and (max-width: 1580px) {
+                    //     margin-left: 100%;
+                    // }
 
                     .img2 {
                         margin-left: -20rem;
+                        @media screen and (max-width: 1580px) {
+                            width: 80%;
+                            // margin-left: -10rem;
+                        }
                     }
 
                     .img3 {
                         margin-left: -30rem;
+                        @media screen and (max-width: 1580px) {
+                            width: 30%;
+                            // margin-left: 40rem;
+                        }
                     }
                 }
 
@@ -254,9 +294,16 @@
                 position: absolute;
                 top: 10%;
                 left: -10%;
+                @media screen and (max-width: 1580px) {
+                    top: 9%;
+                    left: -50%;
+                }
 
                 img {
                     width: 10rem;
+                    @media screen and (max-width: 1580px) {
+                        width: 7rem;
+                    }
                 }
             }
 
@@ -272,12 +319,22 @@
                 -webkit-box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
                 -moz-box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
                 box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
+                @media screen and (max-width: 1580px) {
+                    width: 50%;
+                    right: -50%;
+                }
                 img {
                     width: 4rem;
                     margin: .5rem;
+                    @media screen and (max-width: 1580px) {
+                        width: 2rem;
+                    }
                 }
                 p{
                     color: var(--mainText);
+                    @media screen and (max-width: 1580px) {
+                        width: .1rem;
+                    }
                 }
 
                 div {
@@ -298,9 +355,21 @@
                 -webkit-box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
                 -moz-box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
                 box-shadow: -27px 40px 63px 34px rgb(229, 191, 241);
+                @media screen and (max-width: 1900px) {
+                    z-index: 8;
+                    // flex-wrap: wrap;
+                }
+                @media screen and (max-width: 1580px) {
+                    width: 50%;
+                    left: -50%;
+                    // flex-wrap: wrap;
+                }
                 img {
                     width: 4rem;
                     margin: .5rem;
+                    @media screen and (max-width: 1580px) {
+                        width: 2rem;
+                    }
                 }
                 p{
                     color: var(--mainText);
@@ -317,7 +386,8 @@
 }
 
 .about {
-    height: 70vh;
+    min-height: 80vh;
+    margin-top: 2rem;
     width: 100%;
     background: var(--mainBg);
 
@@ -326,7 +396,13 @@
         background: var(--mainBg);
         margin: auto;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
+        @media screen and (max-width: 1000px) {
+            flex-flow: column;
+            // flex-wrap: wrap;
+        }
 
         .l-about {
             background: var(--mainBg);
@@ -535,7 +611,8 @@
 
 .services {
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
+    margin-top: 3rem;
     background: var(--mainBg);
 
     .services-wrapper {
@@ -612,7 +689,8 @@
 
 .experience {
     width: 100%;
-    height: 30vh;
+    min-height: 30vh;
+    margin-top: 2rem;
 
     .experience-holder {
         width: 80%;
@@ -663,7 +741,8 @@
 
 .skills {
     width: 100%;
-    height: 55vh;
+    min-height: 55vh;
+    margin-top: 60rem;
     background: var(--mainBg);
     margin-top: 1rem;
 
@@ -763,6 +842,7 @@
 .contact {
     width: 100%;
     min-height: 70vh;
+    margin-top: 6rem;
     background: var(--mainBg);
 
     .contact-wrapper {
