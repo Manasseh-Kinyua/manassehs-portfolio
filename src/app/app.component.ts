@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import { AscendasComponent } from './components/ascendas/ascendas.component';
 import { BigbasketComponent } from './components/bigbasket/bigbasket.component';
@@ -11,12 +11,17 @@ import { ThemeService } from './services/theme.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(
     public dialog: MatDialog,
     private themeService: ThemeService
   ) {}
+
   title = 'Manasseh';
+
+  ngOnInit(): void {
+    this.setThemeFromLocalStorage()
+  }
 
   openTaskJarDialog() {
     this.dialog.open(TaskjarComponent)
@@ -36,5 +41,10 @@ export class AppComponent {
 
   switchTheme(name: string) {
     this.themeService.setTheme(name)
+  }
+
+  setThemeFromLocalStorage() {
+    const themeFromStorage = localStorage.getItem('theme')
+    console.log(themeFromStorage)
   }
 }

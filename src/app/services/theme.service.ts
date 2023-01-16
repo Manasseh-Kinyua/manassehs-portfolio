@@ -15,5 +15,6 @@ export class ThemeService {
     Object.keys(theme).forEach((key) => {
       this.document.documentElement.style.setProperty(`--${key}`, theme[key as keyof typeof theme]);
     });
+    localStorage.setItem('theme', name)
   }
 }
