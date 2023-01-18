@@ -150,7 +150,7 @@
                     z-index: 1;
                     img{
                         @media screen and (max-width: 1580px) {
-                            width: 80%;
+                            width: 30%;
                             margin-left: 13rem;
                             margin-top: 6rem;
                         }
@@ -172,16 +172,18 @@
                     .img2 {
                         margin-left: -20rem;
                         @media screen and (max-width: 1580px) {
-                            width: 80%;
+                            // width: 80%;
                             // margin-left: -10rem;
+                            display: none;
                         }
                     }
 
                     .img3 {
                         margin-left: -30rem;
                         @media screen and (max-width: 1580px) {
-                            width: 30%;
+                            // width: 30%;
                             // margin-left: 40rem;
+                            display: none;
                         }
                     }
                 }
@@ -207,6 +209,13 @@
                 -webkit-box-shadow: 101px -81px 63px 34px rgba(208,225,232,1);
                 -moz-box-shadow: 101px -81px 63px 34px rgba(208,225,232,1);
                 box-shadow: 101px -81px 63px 34px rgba(208,225,232,1);
+                @media screen and (max-width: 1580px) {
+                    width: 50%;
+                    height: 6rem;
+                    box-shadow: none;
+                    top: 40%;
+                    left: 60%;
+                }
 
                 .theme-header {
                     display: flex;
@@ -217,6 +226,9 @@
                         color: var(--mainText);
                         font-size: 1.5rem;
                         padding:.5rem ;
+                        @media screen and (max-width: 1580px) {
+                            font-size: .8rem;
+                        }
                     }
                 }
 
@@ -234,6 +246,7 @@
                     justify-content: space-around;
                     padding-top: 0rem;
                     padding-bottom: 10rem;
+                    
 
                     .light-option{
                         transition: 1s;
@@ -242,6 +255,10 @@
                         background: rgb(249, 238, 238);
                         border-radius: 50%;
                         border: .1rem solid grey;
+                        @media screen and (max-width: 1580px) {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                     .light-option:hover {
                         border: 1rem solid black;
@@ -255,6 +272,10 @@
                         background: black;
                         border-radius: 50%;
                         border: .1px solid white;
+                        @media screen and (max-width: 1580px) {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                     .dark-option:hover {
                         border: 1rem solid white;
@@ -269,6 +290,10 @@
                         background: rgb(62, 62, 142);
                         border-radius: 50%;
                         border: .1px solid white;
+                        @media screen and (max-width: 1580px) {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                     .blue-option:hover {
                         border: 1rem solid white;
@@ -282,6 +307,10 @@
                         background: rgb(100, 172, 100);
                         border-radius: 50%;
                         border: .1px solid white;
+                        @media screen and (max-width: 1580px) {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                     .green-option:hover {
                         border: 1rem solid white;
