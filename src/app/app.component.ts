@@ -45,6 +45,5 @@ export class AppComponent implements OnInit {
 
   setThemeFromLocalStorage() {
     const themeFromStorage = localStorage.getItem('theme')
-    console.log(themeFromStorage)
   }
 }
